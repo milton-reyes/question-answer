@@ -4,8 +4,7 @@ import './App.css';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import HeaderComponent from './components/header-component/header.component';
-import ContentComponent from './components/content-component/content.component';
+import QuestionFormComponent from './components/question.form'
 
 function App() {
   return (
@@ -13,9 +12,8 @@ function App() {
       <div className="App">
         <main>
           <Switch>
-            <Route path="/question">
-              <HeaderComponent />
-              <ContentComponent />
+            <Route path="">
+              <QuestionFormComponent />
 
             </Route>
             <Route path="/answer">
